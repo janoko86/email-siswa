@@ -118,8 +118,8 @@
   <p class="subtitle">Sistem Informasi Akun Siswa</p>
   
   <div class="form-group">
-    <label for="nisn">Masukan Kelas + No Absen</label>
-    <input type="text" id="nisn" placeholder="Masukkan Kelas + No Absen Anda..." autocomplete="off">
+    <label for="nisn">Nomor Induk Siswa Nasional (NISN)</label>
+    <input type="text" id="nisn" placeholder="Masukkan 10 digit NISN Anda..." autocomplete="off">
   </div>
   
   <button id="btnCek" onclick="cariDataDariLinkCSV()">Cek Akun Saya</button>
@@ -183,7 +183,7 @@
           let htmlWarning = `
             <strong style="font-size: 16px; display:block;">Halo, ${siswaDitemukan.nama}!</strong>
             <div class="info-grid">
-              <b>No Absen:</b> ${siswaDitemukan.nisn} <br>
+              <b>NISN:</b> ${siswaDitemukan.nisn} <br>
               <b>Kelas:</b> ${siswaDitemukan.kelas}
             </div>
             <div style="font-weight: bold; margin-top: 10px; text-align: center;">
