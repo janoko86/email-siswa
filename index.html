@@ -139,7 +139,7 @@
     const btn = document.getElementById("btnCek");
 
     if (!nisnInput) {
-      tampilkanPesan("Harap masukkan Kelas+No Absen terlebih dahulu.", "error");
+      tampilkanPesan("Harap masukkan NISN terlebih dahulu.", "error");
       return;
     }
 
@@ -209,7 +209,7 @@
           tampilkanPesan(htmlKonten, "success");
         }
       } else {
-        tampilkanPesan("No Absen tidak ditemukan. Pastikan nomor yang dimasukkan benar.", "error");
+        tampilkanPesan("NISN tidak ditemukan. Pastikan nomor yang dimasukkan benar.", "error");
       }
 
     } catch (error) {
